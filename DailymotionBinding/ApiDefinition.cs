@@ -17,9 +17,11 @@ namespace dailymotion {
 		[Export("initWithVideo:")]
 		IntPtr Constructor (string videoId);
 
-
 		[Export("initWithVideo:params:")]
 		IntPtr Constructor (string videoId, NSDictionary parameters);
+
+		[Export("initWithParams:")]
+		IntPtr Constructor (NSDictionary parameters);
 
 
 		//------------------------------
